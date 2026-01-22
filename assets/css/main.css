@@ -1542,6 +1542,18 @@ section,
   }
 }
 
+.ods-footer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.ods-footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
 --------------------------------------------------------------*/
