@@ -2237,6 +2237,51 @@ section,
   transform: scale(1.1);
 }
 
+/* ============================================================
+SOLUCIÓN DEFINITIVA: IMÁGENES 4:3 EN BLOG POSTS
+Compatible con Bootstrap y tu HTML exacto
+============================================================ */
+
+
+.blog-posts .post-img {
+  aspect-ratio: 4/3; 
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+
+.blog-posts .post-img img.img-fluid {
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+  object-position: center;
+  display: block;
+}
+
+
+.blog-posts article:hover .post-img img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.blog-posts .post-date {
+  z-index: 10;
+}
+
+
+.blog-posts article.position-relative.h-100 {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-posts .post-content.d-flex.flex-column {
+  flex-grow: 1;
+}
+
+
+
 /*--------------------------------------------------------------
 # Blog Pagination Section
 --------------------------------------------------------------*/

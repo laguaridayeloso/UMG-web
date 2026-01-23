@@ -256,3 +256,67 @@
       </div>
 
     </section><!-- /Projects Section -->
+
+        <!-- Blog Pagination Section -->
+    <section id="blog-pagination" class="blog-pagination section">
+
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <ul>
+            <li><a href="#"><i class="bi bi-chevron-left"></i></a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#" class="active">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li>...</li>
+            <li><a href="#">10</a></li>
+            <li><a href="#"><i class="bi bi-chevron-right"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </section><!-- /Blog Pagination Section -->
+
+
+/* ============================================================
+SOLUCIÓN DEFINITIVA: IMÁGENES 4:3 EN BLOG POSTS
+Compatible con Bootstrap y tu HTML exacto
+============================================================ */
+
+/* 1. CONTENEDOR DE IMAGEN CON PROPORCIÓN 4:3 FIJA */
+.blog-posts .post-img {
+  aspect-ratio: 4/3; /* ← PROPORCIÓN EXACTA 4:3 */
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* 2. SOBREESCRIBIR COMPORTAMIENTO DE img-fluid DE BOOTSTRAP */
+.blog-posts .post-img img.img-fluid {
+  width: 100%;
+  height: 100%; /* Necesita altura 100% porque el padre tiene aspect-ratio */
+  object-fit: cover; /* Ajusta recortando bordes si es necesario */
+  object-position: center;
+  display: block;
+}
+
+/* 3. MANTENER LA ANIMACIÓN HOVER ORIGINAL PERO MEJORADA */
+.blog-posts article:hover .post-img img {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* 4. ASEGURAR QUE LA FECHA ESTÉ SIEMPRE VISIBLE */
+.blog-posts .post-date {
+  z-index: 10;
+}
+
+/* 5. OPCIONAL: HACER QUE TODAS LAS TARJETAS TENGAN MISMA ALTURA */
+.blog-posts article.position-relative.h-100 {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-posts .post-content.d-flex.flex-column {
+  flex-grow: 1;
+}
