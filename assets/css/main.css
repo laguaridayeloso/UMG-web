@@ -923,6 +923,11 @@ section,
 .hero .carousel-control-next:hover {
   opacity: 0.9;
 }
+/*para h2*/
+.hero .info h2 {
+  white-space: nowrap;
+  font-size: clamp(32px, 5vw, 56px);
+}
 
 /*--------------------------------------------------------------
 # Get Started Section
@@ -1133,6 +1138,32 @@ section,
 
 .services .service-item:hover .readmore {
   color: var(--accent-color);
+}
+
+/*soluciona titulo mobile*/
+.section-title h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--accent-color);
+  flex: 1;
+  max-width: 50px;
+}
+
+@media (max-width: 576px) {
+  .section-title h2::before,
+  .section-title h2::after {
+    max-width: 30px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -1553,6 +1584,32 @@ section,
   height: auto;
 }
 
+/*soluciona titulo mobile*/
+.section-title h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--accent-color);
+  flex: 1;
+  max-width: 50px;
+}
+
+@media (max-width: 576px) {
+  .section-title h2::before,
+  .section-title h2::after {
+    max-width: 30px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Recent Blog Posts Section
@@ -1762,6 +1819,33 @@ section,
   font-family: var(--heading-font);
   font-size: 16px;
 }
+
+/*soluciona titulo mobile*/
+.section-title h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--accent-color);
+  flex: 1;
+  max-width: 50px;
+}
+
+@media (max-width: 576px) {
+  .section-title h2::before,
+  .section-title h2::after {
+    max-width: 30px;
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Alt Services 2 Section
@@ -2280,6 +2364,31 @@ Compatible con Bootstrap y tu HTML exacto
   flex-grow: 1;
 }
 
+/*soluciona titulo mobile*/
+.section-title h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--accent-color);
+  flex: 1;
+  max-width: 50px;
+}
+
+@media (max-width: 576px) {
+  .section-title h2::before,
+  .section-title h2::after {
+    max-width: 30px;
+  }
+}
 
 
 /*--------------------------------------------------------------
