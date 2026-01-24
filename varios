@@ -320,3 +320,167 @@ Compatible con Bootstrap y tu HTML exacto
 .blog-posts .post-content.d-flex.flex-column {
   flex-grow: 1;
 }
+
+          <!---->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item  position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-mountain-city"></i>
+              </div>
+              <h3>Obras Civiles</h3>
+              <p>Desarrollamos proyectos de infraestructura complejos, desde edificios institucionales hasta obras de mayor envergadura.</p>
+              <!--<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>-->
+            </div>
+          </div><!-- End Service Item -->
+
+
+/*soluciona titulo mobile*/
+.section-title h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+}
+
+.section-title h2::before,
+.section-title h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: var(--accent-color);
+  flex: 1;
+  max-width: 50px;
+}
+
+@media (max-width: 576px) {
+  .section-title h2::before,
+  .section-title h2::after {
+    max-width: 30px;
+  }
+}
+con iconos
+    <!-- Stats Counter Section --> <!--VALORES-->
+    <section id="stats-counter" class="stats-counter section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestros valores</h2>
+        <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-start w-100 h-100">
+              <img src="assets/img/iconos/security.png" class="stats-icon flex-shrink-0" alt="Seguridad">
+              <div>
+                <h4>Seguridad</h4>
+                <p>Nuestra prioridad es la integridad de todo el equipo y entorno.</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-start w-100 h-100">
+              <i class="bi bi-check-circle color-orange flex-shrink-0"></i>
+              <div>
+                <!--<span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span> -->
+                <h4>Calidad</h4>
+                <p>Ejecución de los trabajos con los estándares mas altos</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-start w-100 h-100">
+              <i class="bi bi-headset color-green flex-shrink-0"></i>
+              <div>
+                <!--<span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span> -->
+                <h4>Innovación</h4>
+                <p>Aplicación de tecnologías de vanguardia para optimización de todos los procesos.</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-start w-100 h-100">
+              <i class="bi bi-people color-pink flex-shrink-0"></i>
+              <div>
+                <!--<span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>-->
+                <h4>Sostenibilidad</h4>
+                <p>Comprometidos con el desarrollo responsable y el cuidado ambiental (ODS).</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section> <!-- /Stats Counter Section --> <!--VALORES-->
+
+
+con PNG
+
+
+        <!-- Stats Counter Section --> <!--VALORES-->
+    <section id="stats-counter" class="stats-counter section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Nuestros valores</h2>
+        <!--<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>-->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-start w-100 h-100">
+              <img src="assets/img/iconos/security.png" class="stats-icon flex-shrink-0" alt="Seguridad">
+              <div>
+                <h4>Seguridad</h4>
+                <p>Nuestra prioridad es la integridad de todo el equipo y entorno.</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-start w-100 h-100">
+              <img src="assets/img/iconos/quality.png" class="stats-icon flex-shrink-0" alt="Calidad">
+              <div>
+                <h4>Calidad</h4>
+                <p>Ejecución de los trabajos con los estándares mas altos.</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-start w-100 h-100">
+              <img src="assets/img/iconos/idea.png" class="stats-icon flex-shrink-0" alt="Innovacion">
+              <div>
+                <h4>Innovación</h4>
+                <p>Aplicación de tecnologías de vanguardia para optimización de todos los procesos.</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-start w-100 h-100">
+              <img src="assets/img/iconos/sostenibilidad.png" class="stats-icon flex-shrink-0" alt="Sostenibilidad">
+              <div>
+                <h4>Sostenibilidad</h4>
+                <p>Comprometidos con el desarrollo responsable y el cuidado ambiental (ODS).</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section> <!-- /Stats Counter Section --> <!--VALORES-->
