@@ -82,11 +82,76 @@
 
         <div class="row position-relative">
 
-          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/about.jpg">
+          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200">
+            <!-- <img src="assets/img/about.jpg"> -->
+            <div class="about-slider swiper init-swiper">
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": 1,
+                  "navigation": {
+                    "nextEl": ".about-swiper-next",
+                    "prevEl": ".about-swiper-prev"
+                  },
+                  "pagination": {
+                    "el": ".about-swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+            
+              <div class="swiper-wrapper">
+            
+                <div class="swiper-slide">
+                  <img src="assets/img/nosotros/tgta-1.png" alt="">
+                </div>
+            
+                <div class="swiper-slide">
+                  <img src="assets/img/nosotros/tgta-2.jpeg" alt="">
+                </div>
+            
+                <div class="swiper-slide">
+                  <img src="assets/img/nosotros/tgta-3.png" alt="">
+                </div>
+            
+                <div class="swiper-slide">
+                  <img src="assets/img/nosotros/tgta-4.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/nosotros/belen-1.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/nosotros/belen-2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/nosotros/belen-3.png" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/nosotros/belen-4.jpg" alt="">
+                </div>
+            
+              </div>
+            
+              <div class="about-swiper-prev swiper-button-prev"></div>
+              <div class="about-swiper-next swiper-button-next"></div>
+              <div class="about-swiper-pagination swiper-pagination"></div>
+            </div>
+
           </div>
 
           <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="inner-title">UMG Compañía Minera</h2>
+            <h2 class="inner-title">  
+              UMG<br>
+              <span>Compañía Minera</span></h2>
             <div class="our-story">
               <!--<h4>Est 1988</h4>
               <h3>Our Story</h3> -->
