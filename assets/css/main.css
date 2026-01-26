@@ -649,6 +649,36 @@ h6 {
   opacity: 1;
 }
 
+/*---- WhatsApp Floating Button ----------*/
+.whatsapp-float {
+  position: fixed;
+  visibility: visible;
+  opacity: 1;
+  right: 15px;
+  bottom: 65px; /* 👈 separación exacta del scroll-top */
+  z-index: 99999;
+  background-color: #25D366;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px; /* mismo radio que scroll-top */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+.whatsapp-float i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+
+.whatsapp-float:hover {
+  background-color: color-mix(in srgb, #25D366, transparent 20%);
+}
+
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
