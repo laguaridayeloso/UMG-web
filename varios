@@ -494,3 +494,26 @@ con PNG
    aria-label="Chatear por WhatsApp">
   <i class="bi bi-whatsapp"></i>
   </a>
+
+
+  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-remodeling">
+      
+              <div class="portfolio-content h-100">
+                <img src="assets/img/projects/belen/belen-1.jpg" class="img-fluid" alt="">
+                
+                <!-- LINK INVISIBLE QUE CUBRE TODA LA TARJETA -->
+                <a href="project-terminal-de-omnibus-belen.html" class="portfolio-overlay-link" aria-label="Ver proyecto"></a>
+
+                <div class="portfolio-caption">
+                  Terminal de Ómnibus Ciudad de Belén.
+                </div>
+
+                <div class="portfolio-info">
+                  <h4>Finalizado</h4>
+                  <p><a href="project-terminal-de-omnibus-belen.html" class="details-text">Terminal de Ómnibus Ciudad de Belén.</a></p>
+                  <!--<a href="assets/img/projects/remodeling-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>-->
+                  <a href="project-terminal-de-omnibus-belen.html" title="Ver más" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+              </a> 
+            </div><!-- End Portfolio Item -->

@@ -456,7 +456,8 @@ h6 {
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
-  background: url("../img/projects/catamarca/ctca-10.jpeg") bottom center no-repeat;
+  /*background: url("../img/projects/catamarca/ctca-10.jpeg") bottom center no-repeat;*/
+  background: url("../img/projects/catamarca/ctca-10.jpeg") 5% center;
   background-size: cover;
   font-size: 14px;
   position: relative;
@@ -1568,6 +1569,20 @@ section,
   color: var(--accent-color);
 }
 
+/* Opción A: hacer que el <a> ocupe toda la tarjeta */
+.projects a.portfolio-content{
+  display: block;            /* clave: deja de ser inline */
+  height: 100%;              /* para que h-100 funcione */
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evita espacios raros debajo de la imagen */
+.projects a.portfolio-content img{
+  display: block;
+}
+
+
 
 
 /*--------------------------------------------------------------
@@ -2661,6 +2676,21 @@ Compatible con Bootstrap y tu HTML exacto
   .section-title h2::after {
     max-width: 30px;
   }
+}
+
+/* Alinear "Ver más" abajo, manteniendo el título completo */
+.blog-posts .post-content.d-flex.flex-column {
+  flex-grow: 1;
+}
+
+/* 1) La línea gris (HR) baja y queda siempre justo arriba de "Ver más" */
+.blog-posts .post-content hr {
+  margin-top: auto;
+}
+
+/* 2) IMPORTANTE: si ya tenías esto, sacalo o dejalo en 0 */
+.blog-posts .readmore {
+  margin-top: 0;
 }
 
 
