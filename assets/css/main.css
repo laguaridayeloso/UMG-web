@@ -456,7 +456,7 @@ h6 {
 .footer {
   color: var(--default-color);
   background-color: var(--background-color);
-  background: url("../img/footer-bg.jpg") top center no-repeat;
+  background: url("../img/projects/catamarca/ctca-10.jpeg") bottom center no-repeat;
   background-size: cover;
   font-size: 14px;
   position: relative;
@@ -2511,6 +2511,7 @@ section,
   max-width: 100%;
   margin: 0;
 }
+
 
 
 /*--------------------------------------------------------------
