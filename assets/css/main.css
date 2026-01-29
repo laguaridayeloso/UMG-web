@@ -566,6 +566,11 @@ h6 {
 .footer .footer-contact p {
   margin-bottom: 5px;
 }
+/*esta regla es nueva*/
+.footer .footer-contact p:last-child {
+  margin-top: 12px;
+}
+
 
 .footer .copyright {
   padding-top: 25px;
