@@ -3341,3 +3341,64 @@ Compatible con Bootstrap y tu HTML exacto
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
 }
+
+
+/*--------------------------------------------------------------
+# Slider de videos de proyecto
+--------------------------------------------------------------*/
+.video-proyecto-contenedor {
+  margin: 0 auto;
+}
+
+.video-proyecto-contenedor.vertical {
+  max-width: 420px;
+}
+
+.video-proyecto-contenedor.horizontal {
+  max-width: 700px;
+}
+
+.video-proyecto {
+  width: 100%;
+  height: auto;
+  max-height: 700px;
+  display: block;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.videos-slider {
+  position: relative;
+  padding: 10px 50px 40px 50px;
+}
+
+.videos-slider .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videos-slider .swiper-button-prev,
+.videos-slider .swiper-button-next {
+  color: var(--accent-color);
+}
+
+.videos-slider .swiper-pagination {
+  margin-top: 15px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .video-proyecto-contenedor.vertical,
+  .video-proyecto-contenedor.horizontal {
+    max-width: 100%;
+  }
+
+  .video-proyecto {
+    max-height: 600px;
+  }
+
+  .videos-slider {
+    padding: 10px 20px 40px 20px;
+  }
+}
