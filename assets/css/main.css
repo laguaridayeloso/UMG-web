@@ -2160,6 +2160,24 @@ section,
   margin-right: 20px;
 }
 
+/*puntitos de swiper en nuestros valores*/
+/* Estilo completo para los puntitos del Swiper en Nuestros Valores */
+.stats-counter .swiper-pagination {
+  margin-top: 10px;
+}
+
+.stats-counter .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: var(--background-color);
+  opacity: 1;
+  border: 1px solid var(--accent-color);
+}
+
+.stats-counter .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--accent-color);
+}
+
 
 /*--------------------------------------------------------------
 # Alt Services 2 Section
