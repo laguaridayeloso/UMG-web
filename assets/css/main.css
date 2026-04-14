@@ -1103,12 +1103,26 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .service-item {
+/*.services .service-item {
   background-color: var(--surface-color);
   padding: 40px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
   height: 100%;
+}*/
+.services .service-item .icon:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: color-mix(in srgb, var(--heading-color), transparent 95%);
+  border-radius: 50px;
+  z-index: 1;
+  top: 10px;
+  right: -20px;
+  transition: 0.3s;
+  display: none; /* Añadimos esto para ocultar el círculo gris */
 }
+
 
 .services .service-item .icon {
   width: 48px;
@@ -1162,8 +1176,13 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
-.services .service-item:hover .icon i {
+/*.services .service-item:hover .icon i {
   color: var(--heading-color);
+}*/
+
+.services .service-item:hover .icon:before {
+  background: var(--accent-color);
+  display: none; /* Añadimos esto para ocultar el círculo amarillo */
 }
 
 .services .service-item:hover .icon:before {
@@ -1212,21 +1231,36 @@ section,
   object-fit: contain;
   position: relative;
   z-index: 2;
-  transition: ease-in-out 0.3s;
+  /*transition: ease-in-out 0.3s;*/
+  transition: filter 0s, transform 0.3s ease-in-out;
   /* Si tus iconos PNG son de color y quieres que sean del color del heading */
   filter: brightness(0) saturate(100%) invert(24%) sepia(10%) saturate(2000%) hue-rotate(190deg) brightness(95%) contrast(90%);
 }
 
 /* Color hover para los iconos PNG */
-.services .service-item:hover .custom-icon {
-  /* Mismo color que los iconos originales en hover */
+/* Mismo color que los iconos originales en hover */
+/*.services .service-item:hover .custom-icon {
+  
   filter: brightness(0) saturate(100%) invert(24%) sepia(10%) saturate(2000%) hue-rotate(190deg) brightness(95%) contrast(90%);
+}*/
+
+/* Color hover para los iconos PNG */
+.services .service-item:hover .custom-icon {
+  /* Filtro modificado para transformar el PNG a color amarillo (--accent-color) */
+  filter: brightness(0) saturate(100%) invert(78%) sepia(48%) saturate(3474%) hue-rotate(356deg) brightness(101%) contrast(106%);
 }
 
 /* Si tus iconos PNG tienen fondo blanco y necesitan ser del color del heading */
-.services .service-item .icon img[src*=".png"] {
+/*.services .service-item .icon img[src*=".png"] {*/
   /* Esta regla es más específica para PNGs */
-  filter: brightness(0) saturate(100%) invert(24%) sepia(10%) saturate(2000%) hue-rotate(190deg) brightness(95%) contrast(90%);
+  /*filter: brightness(0) saturate(100%) invert(24%) sepia(10%) saturate(2000%) hue-rotate(190deg) brightness(95%) contrast(90%);
+}*/
+
+/* Color hover para los iconos PNG */
+.services .service-item:hover .custom-icon,
+.services .service-item:hover .icon img[src*=".png"] {
+  /* Filtro modificado con !important para anular la regla de color gris */
+  filter: brightness(0) saturate(100%) invert(78%) sepia(48%) saturate(3474%) hue-rotate(356deg) brightness(101%) contrast(106%) !important;
 }
 
 /* Ajuste para alinear verticalmente los iconos PNG */
