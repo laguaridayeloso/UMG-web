@@ -2063,8 +2063,10 @@ section,
 # Stats Counter Section
 --------------------------------------------------------------*/
 .stats-counter .stats-item {
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--surface-color); /* Asegura fondo blanco */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05); /* Sombra más suave y corta */
   padding: 30px;
+  border-radius: 8px; /* Bordes ligeramente redondeados */
 }
 
 .stats-counter .stats-item i {
@@ -2116,8 +2118,10 @@ section,
 
 /*ICONOS EXISTENTES (NO TOCAR)*/
 .stats-counter .stats-item {
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--surface-color); /* Asegura fondo blanco */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05); /* Sombra más suave y corta */
   padding: 30px;
+  border-radius: 8px; /* Bordes ligeramente redondeados */
 }
 
 .stats-counter .stats-item i {
